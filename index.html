@@ -61,10 +61,12 @@
         }
         hide()
 
-        window.addEventListener("orientationchange", () => {
-            hide()
+        if (window.orientation < 1) {
+            screen.orientation.lock("landscape")
+        }
 
-        })
+        window.onorientationchange = hide
+
 
         // document.addEventListener("resize", )
         try {
