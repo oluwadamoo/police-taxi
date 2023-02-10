@@ -455,6 +455,7 @@ body {
 
 .mobile {
     display: none;
+    padding: 0 2%;
     /* width: 100% */
 }
 
