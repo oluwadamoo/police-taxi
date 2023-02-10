@@ -455,10 +455,11 @@ body {
 
 .mobile {
     display: none;
-    padding: 0 2%;
+    padding: 0 4%;
     /* width: 100% */
 }
 
 .mobile h2 {
-    color: #fff
+    color: #fff;
+    text-align: center;
 }
