@@ -11,7 +11,7 @@
 
 <body>
     <div class="mobile">
-        <h2>Rotate or Set your device to desktop mode</h2>
+        <h2>Rotate and refresh or set your device to desktop mode</h2>
     </div>
     <div class="road">
         <div class="police">
@@ -61,21 +61,10 @@
         }
         hide()
 
-        console.log(window.orientation, "orientation")
-
-        if (window.orientation > 1) {
-            console.log(window.orientation)
-            screen.orientation.lock("landscape")
-
-            alert(screen.orientation)
-
-        }
 
 
-        window.onorientationchange = hide
 
 
-        // document.addEventListener("resize", )
         try {
             window.addEventListener("resize", hide())
         } catch (error) {
