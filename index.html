@@ -61,6 +61,10 @@
         }
         hide()
 
+        screen.addEventListener("orientationchange", () => {
+            hide()
+        });
+
         // document.addEventListener("resize", )
         try {
             window.addEventListener("resize", hide())
