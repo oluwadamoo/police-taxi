@@ -50,25 +50,18 @@
         let width = window.innerWidth;
 
         function hide() {
-            let answer = window.orientation > 1;
-
-            if (!answer) {
-                screen.orientation.lock("landscape")
-                // const road = document.querySelector('.road')
-                // const mobile = document.querySelector('.mobile')
-                // road.style.display = 'none'
-                // mobile.style.display = 'flex'
-
+            if (width < 745) {
+                const road = document.querySelector('.road')
+                const mobile = document.querySelector('.mobile')
+                road.style.display = 'none'
+                mobile.style.display = 'flex'
             }
-            // if (screen.orientation.type != "landscape-primary" || screen.orientation.type != "landscape-secondary" && width < 745) {
-            //     screen.orientation.lock("landscape")
-            // }
+
 
         }
         hide()
 
         // document.addEventListener("resize", )
-
         try {
             window.addEventListener("resize", hide())
         } catch (error) {
