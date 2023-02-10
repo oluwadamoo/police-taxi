@@ -451,3 +451,13 @@ body {
     background: #fdd206;
     border-bottom-right-radius: 10px;
 }
+
+
+.mobile {
+    display: none;
+    /* width: 100% */
+}
+
+.mobile h2 {
+    color: #fff
+}

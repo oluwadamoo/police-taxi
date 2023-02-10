@@ -10,6 +10,9 @@
 </head>
 
 <body>
+    <div class="mobile">
+        <h2>use a device with larger screen</h2>
+    </div>
     <div class="road">
         <div class="police">
             <div class="light_beam"></div>
@@ -41,6 +44,29 @@
             </span>
         </div>
     </div>
+
+    <script>
+        let maxWidth = 745;
+        let width = window.innerWidth;
+
+        function hide() {
+            if (width < 745) {
+                const road = document.querySelector('.road')
+                const mobile = document.querySelector('.mobile')
+                road.style.display = 'none'
+                mobile.style.display = 'flex'
+            }
+
+
+        }
+        hide()
+
+        try {
+            window.addEventListener("resize", hide)
+        } catch (error) {
+            window.onload = hide
+        }
+    </script>
 </body>
 
 </html>
